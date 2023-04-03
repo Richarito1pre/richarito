@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Compte</title>
+    <link rel="stylesheet" type="text/css" href="fonts/css/all.css">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="corps">
+    
+<div class="container">
+  <main>
+    <div class="py-3 text-center">
+      <h2>vueillez remplir</h2>
+    </div>
+
+    <div class="row g-1">
+      <div class="col-md-7 col-lg-8">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">Nom de famille<span class="etoile text-danger">*</span></label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Nom valide obligatoire.
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Prénom</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Prénom valide obligatoire.
+              </div>
+            </div>
+            <div class="mb-3">
+  <label for="formFile" class="form-label">Profil</label>
+  <input class="form-control col-md-6 col-lg-6" type="file" id="formFile">
+</div>
+            <div class="col-12">
+              <label for="address" class="form-label">Lieu</label>
+              <input type="text" class="form-control" id="address" placeholder="Nykonakpoe" required>
+              <div class="invalid-feedback">
+                S'il ous plait vuiellez donner votre adresse.
+              </div>
+            </div>
+
+            <div class="form-group">
+    <label for="groupe">Groupe :</label>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="groupe" id="groupe1" value="ouvrier">
+      <label class="form-check-label" for="groupe1">
+        <i class="fas fa-hard-hat"></i> Ouvrier
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="radio" name="groupe" id="groupe2" value="technicien">
+      <label class="form-check-label" for="groupe2">
+        <i class="fas fa-tools"></i> Technicien
+      </label>
+    </div>
+  </div>
+
+
+            <div class="col-md-5">
+              <label for="cat" class="form-label">Spécialité</label>
+              <select class="form-select" id="cat" required>
+                <option value="">choisir...</option>
+                <option>Macon</option>
+                <option>Plombier</option>
+                <option>Charpentier</option>
+                <option>Electricien</option>
+                <option>Autre</option>
+              </select>
+              <div class="invalid-feedback">
+                Valider catégorier.
+              </div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="zip" class="form-label">Téléphone</label>
+              <input type="telephone" class="form-control" id="tel" placeholder="saisir Numéro" required>
+              <div class="invalid-feedback">
+                Numéro de téléphone obligatoire.
+              </div>
+            </div>
+            <div class="col-12 mb-3">
+              <label for="address2" class="form-label">Téléphone2<span class="text-muted">(Optional)</span></label>
+              <input type="number" class="form-control" id="address2" placeholder="sur quel tel vous joindre si le premier ne marchait pas">
+            </div>
+
+          </div>
+             <div class="col-12 mb-3">
+              <label for="address2" class="form-label">Année d'expérience<span class="text-muted">(Optional)</span></label>
+              <input type="number" class="form-control" id="address2" placeholder="Depuis combien de temps vous exercez vorte métier">
+            </div>
+
+          <h4 class="mb-3">Sexe</h4>
+
+          <div class="my-3 mb-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Masculin</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Féminin</label>
+            </div>
+          </div>
+       
+
+<div class="container">
+  <a href="">
+            <div>
+                <button class="w-100 btn btn-primary btn-lg postuler" type="submit">Enregistrer</button>
+            </div>
+          </a> 
+
+  
+</div>
+
+          
+        </form>
+      </div>
+    </div>
+</form>
+  </main>
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2023 Coin d'ouvriers</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Confidentialité</a></li>
+      <li class="list-inline-item"><a href="#">Utilisation</a></li>
+      <li class="list-inline-item"><a href="#">Apropos</a></li>
+    </ul>
+  </footer>
+</div>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="assets/form-validation.js"></script>
+  </body>
+</html>
+

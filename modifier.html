@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Modifier</title>
+    <link rel="stylesheet" type="text/css" href="fonts/css/all.css">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="assets/form-validation.css" rel="stylesheet">
+  </head>
+  <body class="corps">
+  <header class="navbar navbar-dark sticky-top bg-primary flex-md-nowrap p-0 shadow mynav">
+  <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 py-3" href="#">
+<div>
+  Coin des ouvriers
+</div>
+
+  </a>
+
+
+  <div class="navbar-nav">
+    <div class="nav-item text-nowrap">
+      <a class="nav-link px-3 text-light" href="#">Déconnecter</a>
+    </div>
+  </div>
+</header>
+<div class="container-fluid sticky-top flex-md-nowrap p-0  myflex ">
+  <div class="d-flex justify-content-between shadow-regular">
+    <div class="p-3 bd-highlight" >
+        <a href="home.html" style="text-decoration: none; color: #3300ff;">Accueil</a>
+    </div>
+    <div class="p-3 bd-highlight">
+        <a href="mesannonces.html" style="text-decoration: none;color: #3300ff;color: #3300ff; ">Mes annonces</a>
+    </div>
+    <div class="p-3 bd-highlight">
+        <a href="favoris.html" style="text-decoration: none;color: #3300ff;color: #3300ff; ">Favoris</a>
+    </div>
+    <div class="p-3 bd-highlight" style="text-decoration: none; ">
+        <a href="notification.html" style="text-decoration: none; color: #3300ff; ">Notification</a>
+    </div>
+  </div>
+  
+</div>
+
+    
+<div class="container">
+  <main>
+
+    <div class="row g-1 my-5">
+      <div class="col-md-12 col-lg-12">
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-6">
+              <label for="titre" class="form-label">Nature du travail<span class="etoile text-muted">*</span></label>
+              <input type="text" class="form-control " id="titre" placeholder="Titre de l'annonce" value="">
+              <small class="text-muted">Le titre est facultatif mais acrocheur si vous en avez</small>
+              <div class="invalid-feedback">
+                Titre obligatoire.
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <label for="titre" class="form-label">Lieu<span class="etoile text-danger">*</span></label>
+              <input type="text" class="form-control form-control-md" id="lieu" placeholder="Lieu du chantier" value="" required>
+                <small class="text-muted">Exemple:Agbalpedo,près de la pharmacie vigueure</small>
+              <div class="invalid-feedback">
+               Lieu obligatoire.
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <label for="titre" class="form-label">Date <span class="etoile text-danger">*</span></label>
+              <input type="date" class="form-control form-control-md" id="date_travo" placeholder="Date à laquelle les ouvriers viennent" value="" required>
+               <small class="text-muted">Date à laquelle les ouvriers doivent se rendre</small>
+              <div class="invalid-feedback">
+               Date obligatoire.
+              </div>
+            </div>
+
+
+
+
+
+            <div class="col-sm-6 col-md-6">
+              <label for="ouvrier" class="form-label">Ouvriers</label>
+              <input type="number" class="form-control" id="ouvrier" placeholder="Nombre d'ouviers dont vous avez besoin" value="" required>
+              <div class="invalid-feedback">
+                Nombre d'ouriers valide obligatoire.
+              </div>
+            </div>
+              <div class="col-sm-6 col-md-6">
+              <label for="ouvrier" class="form-label">Durée</label>
+              <input type="number" class="form-control" id="ouvrier" placeholder="Durée des travaux" value="" required>
+               <small class="text-muted">Estimation aproximative de la durée des travaux</small>
+              <div class="invalid-feedback">
+                Estimation du  temps obligatoire.
+              </div>
+            </div>
+        
+
+
+
+        <div class="container">
+          <div class="row">
+            <div class="d-inline">
+               <p>
+            <div class="form-check col-sm-4">
+            <input type="checkbox" class="form-check-input " id="maç" data-bs-toggle="collapse" data-bs-target="#maçon" aria-expanded="false" aria-controls="maçon">
+            <label class="form-check-label" for="maç" data-bs-toggle="collapse" data-bs-target="#maçon" aria-expanded="true" aria-controls="maçon">maçon</label>
+          </div>
+          </p>
+            <div>
+              <div class="collapse collapse-horizontal" id="maçon">
+                <div class="">
+                  <input type="number" class="form-control categorie" id="lieu" placeholder="Nombre de meunisier" value="maçon" required>
+                  <div class="invalid-feedback">
+                  Nombre de maçon obligatoire.
+                   </div>
+                  
+                </div>
+              
+              </div>
+              
+            </div>
+
+
+           
+            </div>
+            
+          </div>
+          
+        </div>
+     <div class="d-inline">
+               <p>
+            <div class="form-check">
+            <input type="checkbox" class="form-check-input " id="mano" data-bs-toggle="collapse" data-bs-target="#manoeuvre" aria-expanded="false" aria-controls="manoeuvre">
+            <label class="form-check-label" for="mano" data-bs-toggle="collapse" data-bs-target="#manoeuvre" aria-expanded="true" aria-controls="manoeuvre">Manoeuvre</label>
+          </div>
+          </p>
+            <div>
+              <div class="collapse collapse-horizontal" id="manoeuvre">
+                <div class="">
+                  <input type="number" class="form-control categorie" id="lieu" placeholder="Nombre de manoeuvre" value="" required>
+                  <div class="invalid-feedback">
+                   Nombre de manoeuvreobligatoire.
+                   </div>
+                  
+                </div>
+              
+              </div>
+              
+            </div>
+
+
+           
+            </div>
+            
+          </div>
+          
+        </div>
+    <div class="d-inline">
+               <p>
+            <div class="form-check col-sm-4">
+            <input type="checkbox" class="form-check-input " id="men" data-bs-toggle="collapse" data-bs-target="#menusier" aria-expanded="false" aria-controls="menusier">
+            <label class="form-check-label" for="men" data-bs-toggle="collapse" data-bs-target="#menusier" aria-expanded="true" aria-controls="menusier">Menuisier</label>
+          </div>
+          </p>
+            <div>
+              <div class="collapse collapse-horizontal" id="menusier">
+                <div class="">
+                  <input type="number" class="form-control categorie" id="lieu" placeholder="Nombre de meunisier" value="" required>
+                  <div class="invalid-feedback">
+                  Nombre de menuisier obligatoire.
+                   </div>
+                  
+                </div>
+              
+              </div>
+              
+            </div>
+
+
+           
+            </div>
+            
+          </div>
+          
+        </div>
+
+<div class="container">
+  <a href="#">
+            <div>
+                <button class="w-100 btn btn-primary btn-lg postuler" type="submit">Enregistrer</button>
+            </div>
+          </a> 
+
+  
+</div>
+
+    
+
+ </form>
+</div>
+</div>
+</main>
+
+  
+
+
+ 
+
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">&copy; 2023 Coin d'ouvriers</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Confidentialité</a></li>
+      <li class="list-inline-item"><a href="#">Utilisation</a></li>
+      <li class="list-inline-item"><a href="#">A propos</a></li>
+    </ul>
+  </footer>
+</div>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="asseets/form-validation.js"></script>
+  </body>
+</html>
